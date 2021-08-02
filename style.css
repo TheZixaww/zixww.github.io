@@ -1,0 +1,336 @@
+body{
+	font-family: arial;
+}
+
+/* Top Bar And Navigation */
+
+ .bar {
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid black;
+	z-index: 9999;
+}
+
+.bar ul li{
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+	left: 635px;
+	bottom: 20px;
+	font-family: Courier;
+	font-weight: bold;
+}
+
+/* Conteiner */
+
+.contener{
+	width: 900px;
+	margin: 70px auto;
+	background-color: #eaeaea;
+}
+
+/* Background Profil */
+
+.hero{
+	height: 200px;
+	background-image: url('../back.jpg');
+	background-size: cover;
+	border-radius: 10px;
+	
+}
+
+.contener .hero img{
+	position: relative;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Profil */
+
+.contener .name{
+	font-family: Courier;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.contener .hobi{
+	font-family: Courier;
+	text-align: center;
+	position: relative;
+	bottom: 20px;
+	color: #999;
+}
+
+/* Tentang Pembuat */
+
+.contener .about{
+	width: 400px;
+	height: 200px;
+	border: 2px solid #999;
+	border-radius: 25px;
+	position: relative;
+	left: 25px;
+	font-family: Courier;
+	float: left;
+}
+
+.contener .tentang{
+	font-family: Courier;
+	text-align: center;
+}
+
+.contener .about h5{
+	text-align: center;
+}
+
+.contener .about h4{
+	text-align: center;
+}
+
+/* Bahasa Yang Di Kuasai */
+
+.contener .skil{
+	width: 400px;
+	height: 200px;
+	border: 2px solid #999;
+	border-radius: 25px;
+	float: right;
+	position: relative;
+	right: 25px;
+}
+
+.contener .skil h3{
+	text-align: center;
+	font-family: Courier New;
+}
+
+.contener .skil .css{
+	width: 100px;
+	height: 100px;
+	
+}
+
+.contener .skil .logohtml {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	top: 8px;
+}
+
+/* tambahan */
+
+.contener .tambahan {
+	width: 150px;
+	height: 100px;
+	margin-top: 150px;
+	
+}
+
+.contener .main{
+	text-align: center;
+	font-family: Courier;
+}
+
+.box input[type = "submit"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px;
+	text-align: center;
+	border: 2px solid green;
+	padding: 14px 40px;
+	outline: none;
+	color: black;
+	border-radius: 35px;
+	transition: 0,25s;
+	cursor: pointer;
+	font-family: Courier;
+	font-weight: bold;
+}
+
+
+.contener .footer{
+	background-color: #333;
+	padding: 10px;
+	font-family: Courier;
+}
+
+.contener .footer .copy{
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
+
+.slide{
+	max-width: auto;
+	height: 300px;
+	position: relative;
+	left: 5%;
+}
+
+.slide1,.slide2,.slide3{
+	position: absolute;
+	width: 90%;
+	height: 300px;
+	border-radius: 30px;
+}
+
+.slide1{
+	background: url(../onepiece.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade 8s infinite;
+	-webkit-animation: fade 8s infinite;
+}
+
+.slide2{
+	background: url(../blackclover.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade2 8s infinite;
+	-webkit-animation: fade2 8s infinite;
+}
+
+.slide3{
+	background: url(../tokyo.jpg) no-repeat center;
+	background-size: cover;
+	animation: fade3 8s infinite;
+	-webkit-animation: fade3 8s infinite;
+}
+
+@keyframes fade {
+	0%{opacity: 1}
+	33.333% {opacity: 0}
+	66.666% {opacity: 0}
+	100% {opacity: 1}
+}
+
+@keyframes fade2 {
+	0%{opacity: 0}
+	33.333% {opacity: 1}
+	66.666% {opacity: 0}
+	100% {opacity: 0}
+}
+
+@keyframes fade3 {
+	0%{opacity: 0}
+	33.333% {opacity: 0}
+	66.666% {opacity: 1}
+	100% {opacity: 0}
+}
+
+.social{
+	width: 600px;
+	margin: auto;
+}
+
+.social .fb {
+	background-color: #005FFF;
+	width: 500px;
+	height: 35px;
+	margin: 20px auto;
+	border: 1px solid black;
+	border-radius: 25px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,45);
+}
+
+.social .fb .logofb{
+	width: 35px;
+	height: 35px;
+	background-size: cover;
+	margin: 1px;
+	padding-left: 20px;
+}
+
+.social .fb a{
+	font-family: Courier;
+	opacity: ;
+	position: relative;
+	bottom: 14px;
+	color: black;
+}
+
+.social .ig {
+	background-color: #6A00CD;
+	width: 500px;
+	height: 35px;
+	margin: 20px auto;
+	border: 1px solid black;
+	border-radius: 25px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,45);
+	
+}
+
+.social .ig .logoig{
+	width: 35px;
+	height: 35px;
+	background-size: cover;
+	margin: 1px;
+	padding-left: 20px;
+}
+
+.social .ig a{
+	font-family: Courier;
+	opacity: ;
+	position: relative;
+	bottom: 14px;
+	color: black;
+}
+
+.social .trakter {
+	background-color: #B6171D;
+	width: 500px;
+	height: 35px;
+	margin: 20px auto;
+	border: 1px solid black;
+	border-radius: 25px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,45);
+	
+}
+
+.social .trakter .logotrakter{
+	width: 35px;
+	height: 35px;
+	background-size: cover;
+	margin: 1px;
+	padding-left: 20px;
+}
+
+.social .trakter a{
+	font-family: Courier;
+	opacity: ;
+	position: relative;
+	bottom: 14px;
+	color: black;
+}
+
+
+.footet 
+
+
+
+
+
+
+
+
+
+
+
+/* clear fix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
